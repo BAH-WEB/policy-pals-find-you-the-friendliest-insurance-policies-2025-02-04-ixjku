@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +15,39 @@
     <meta name="description" content="Find your ideal insurance policy with PolicyPals. Personalized matching, transparent comparisons, and community support.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-gray-900 text-gray-100 font-['Inter']">
     <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold text-blue-400">PolicyPals</a>
+                <a href="https://BAH-WEB.github.io/policy-pals-find-you-the-friendliest-insurance-policies-2025-02-04-ixjku" class="text-2xl font-bold text-blue-400 hover:text-blue-300 transition-colors duration-300">PolicyPals</a>
+                
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="hover:text-blue-400 transition-colors duration-300">Features</a>
                     <a href="#benefits" class="hover:text-blue-400 transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="hover:text-blue-400 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="hover:text-blue-400 transition-colors duration-300">About</a>
                     <a href="#faq" class="hover:text-blue-400 transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a>
                 </div>
-                <a href="https://www.PolicyPals.Co.Uk" class="hidden md:inline-block px-6 py-2 bg-blue-500 hover:bg-blue-600 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+
+                <div class="mobile-menu hidden md:hidden absolute top-full left-0 w-full bg-gray-900 border-b border-gray-800">
+                    <div class="px-6 py-4 space-y-4">
+                        <a href="#features" class="block hover:text-blue-400 transition-colors duration-300">Features</a>
+                        <a href="#benefits" class="block hover:text-blue-400 transition-colors duration-300">Benefits</a>
+                        <a href="#testimonials" class="block hover:text-blue-400 transition-colors duration-300">Testimonials</a>
+                        <a href="#about" class="block hover:text-blue-400 transition-colors duration-300">About</a>
+                        <a href="#faq" class="block hover:text-blue-400 transition-colors duration-300">FAQ</a>
+                        <a href="#contact" class="block hover:text-blue-400 transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+
+                <a href="https://www.PolicyPals.Co.Uk" class="hidden md:inline-block px-6 py-2 bg-blue-500 hover:bg-blue-600 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                     Get Started
                 </a>
             </div>
@@ -28,53 +56,150 @@
 
     <main>
         <section class="relative min-h-screen flex items-center justify-center pt-20 pb-32 overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 opacity-50"></div>
+            <div class="absolute inset-0">
+                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1920" alt="Background" class="w-full h-full object-cover opacity-20">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 opacity-90"></div>
             <div class="container mx-auto px-6 relative z-10">
                 <div class="text-center max-w-4xl mx-auto">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
-                        Policy Pals Find You The Friendliest Insurance Policies
+                        Find Your Perfect Insurance Match with PolicyPals
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
-                        Discover Your Ideal Policy with PolicyPals.co.uk, Your Friendly Pals in Navigating the World of Insurance!
+                        Experience hassle-free insurance shopping with AI-powered matching, transparent comparisons, and expert guidance. Save up to 35% on premiums while getting the coverage you truly need.
                     </p>
-                    <a href="https://www.PolicyPals.Co.Uk" class="inline-block px-8 py-4 bg-blue-500 hover:bg-blue-600 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                        Find Your Perfect Policy
-                    </a>
+                    <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                        <a href="https://www.PolicyPals.Co.Uk" class="inline-block px-8 py-4 bg-blue-500 hover:bg-blue-600 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            Get Your Free Quote
+                        </a>
+                        <a href="#how-it-works" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-all duration-300">
+                            <span>See How It Works</span>
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="features" class="py-24 bg-gray-800">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Features That Make Us Different</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Smart Features for Smarter Insurance Choices</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div class="bg-gray-900 rounded-2xl p-8 hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-6">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-6 transform transition-transform duration-300 hover:rotate-12">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Personalised Policy Matching</h3>
-                        <p class="text-gray-400">Advanced algorithms match you with insurance policies tailored to your unique needs and preferences.</p>
+                        <h3 class="text-xl font-semibold mb-4">AI-Powered Policy Matching</h3>
+                        <p class="text-gray-400">Our sophisticated algorithm analyzes 50+ factors to find your perfect policy match, saving you hours of research and thousands in premiums. Enjoy personalized recommendations based on your unique needs and risk profile.</p>
                     </div>
                     <div class="bg-gray-900 rounded-2xl p-8 hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-6">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-6 transform transition-transform duration-300 hover:rotate-12">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Transparent Comparisons</h3>
-                        <p class="text-gray-400">Interactive side-by-side comparison tools showing prices, coverage details, and exclusions.</p>
+                        <h3 class="text-xl font-semibold mb-4">Crystal-Clear Comparisons</h3>
+                        <p class="text-gray-400">Compare policies side-by-side with our interactive tool. See detailed coverage breakdowns, read real customer reviews, and understand exactly what you're paying for. No hidden fees or surprise exclusions.</p>
                     </div>
                     <div class="bg-gray-900 rounded-2xl p-8 hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-6">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-6 transform transition-transform duration-300 hover:rotate-12">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Community Support</h3>
-                        <p class="text-gray-400">Join our community to share experiences and get advice from other PolicyPals members.</p>
+                        <h3 class="text-xl font-semibold mb-4">Expert Community Support</h3>
+                        <p class="text-gray-400">Join our thriving community of 50,000+ members. Share experiences, get advice from insurance experts, and learn from others who've been in your shoes. Available 24/7 for your peace of mind.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Members Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 rounded-xl p-8 hover:transform hover:scale-102 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"PolicyPals saved me over £450 on my home insurance. Their AI matching system found coverage I didn't even know existed, and the comparison tool made it easy to understand exactly what I was getting."</p>
+                        <div class="text-sm">
+                            <p class="font-semibold text-blue-400">Sarah Thompson</p>
+                            <p class="text-gray-400">Homeowner, Manchester</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-8 hover:transform hover:scale-102 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The community support is incredible. Got great advice from other business owners and found the perfect commercial insurance package. The process was smooth and transparent throughout."</p>
+                        <div class="text-sm">
+                            <p class="font-semibold text-blue-400">James Wilson</p>
+                            <p class="text-gray-400">Small Business Owner, Leeds</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-8 hover:transform hover:scale-102 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"As a first-time car owner, I was overwhelmed by insurance options. PolicyPals made it simple and found me a great deal with comprehensive coverage. Their customer service is top-notch!"</p>
+                        <div class="text-sm">
+                            <p class="font-semibold text-blue-400">Emma Roberts</p>
+                            <p class="text-gray-400">New Driver, Birmingham</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-8 hover:transform hover:scale-102 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The comparison tool is brilliant! I could see exactly what each policy covered and what it didn't. Saved me hours of reading through policy documents. Highly recommended!"</p>
+                        <div class="text-sm">
+                            <p class="font-semibold text-blue-400">David Chen</p>
+                            <p class="text-gray-400">Property Investor, London</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About PolicyPals</h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <p class="text-gray-300 leading-relaxed">
+                        Founded in 2020 by a team of insurance experts and tech innovators, PolicyPals emerged from a simple observation: finding the right insurance shouldn't be complicated or confusing. Our founders experienced firsthand the frustration of navigating the insurance market and decided to create a solution that would make insurance shopping transparent, efficient, and even enjoyable.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Today, PolicyPals is driven by our mission to democratize insurance access through technology and community. We believe in transparency, fairness, and putting our members first. Our core values of innovation, integrity, and inclusivity guide everything we do, from developing our AI-powered matching system to building our supportive community platform. We're not just another insurance comparison site - we're your trusted partner in finding the perfect policy.
+                    </p>
                 </div>
             </div>
         </section>
@@ -83,17 +208,25 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
                 <div class="max-w-3xl mx-auto space-y-6">
-                    <div class="bg-gray-800 rounded-lg p-6">
-                        <h3 class="text-xl font-semibold mb-4">How does PolicyPals match me with insurance policies?</h3>
-                        <p class="text-gray-400">We use advanced algorithms to analyze your needs and preferences, matching you with the most suitable policies from our extensive network of providers.</p>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">How does PolicyPals' AI matching system work?</h3>
+                        <p class="text-gray-400">Our AI analyzes over 50 personal and demographic factors, comparing them against our database of 100+ insurance providers. We consider your specific needs, risk profile, and preferences to find policies that offer the best value and coverage for your situation.</p>
                     </div>
-                    <div class="bg-gray-800 rounded-lg p-6">
-                        <h3 class="text-xl font-semibold mb-4">Is PolicyPals free to use?</h3>
-                        <p class="text-gray-400">Yes, our service is completely free for users. We earn commission from insurance providers when you choose to purchase a policy through our platform.</p>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">What types of insurance can I compare on PolicyPals?</h3>
+                        <p class="text-gray-400">We offer comparisons for home, auto, life, health, business, and travel insurance. Our platform covers both personal and commercial insurance needs, with specialized options for unique situations.</p>
                     </div>
-                    <div class="bg-gray-800 rounded-lg p-6">
-                        <h3 class="text-xl font-semibold mb-4">How can I join the PolicyPals community?</h3>
-                        <p class="text-gray-400">Simply create an account on our platform to access our community features, including forums, reviews, and advice from other members.</p>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Are there any hidden fees for using PolicyPals?</h3>
+                        <p class="text-gray-400">No, PolicyPals is completely free for users. We earn commission from insurance providers when you purchase a policy through our platform, but this never affects the price you pay or the recommendations you receive.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">How quickly can I get insurance coverage?</h3>
+                        <p class="text-gray-400">Many policies can be activated within 24 hours of purchase. Some specialized coverage may take longer. Our platform shows estimated activation times for each policy, and our support team can help expedite the process if needed.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">What support does PolicyPals offer after I purchase a policy?</h3>
+                        <p class="text-gray-400">We provide ongoing support through our community platform, expert advisors, and dedicated customer service team. We'll help with claims processes, policy updates, and any questions that arise throughout your coverage period.</p>
                     </div>
                 </div>
             </div>
@@ -102,12 +235,15 @@
         <section id="contact" class="py-24 bg-gradient-to-br from-gray-800 to-gray-900">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Find Your Perfect Policy?</h2>
-                <p class="text-xl text-gray-300 mb-12">Join thousands of satisfied customers who've found their ideal insurance coverage with PolicyPals</p>
+                <p class="text-xl text-gray-300 mb-12">Join over 100,000 satisfied customers who've saved an average of 35% on their insurance premiums</p>
                 <div class="flex flex-col md:flex-row items-center justify-center gap-6">
                     <a href="https://www.PolicyPals.Co.Uk" class="px-8 py-4 bg-blue-500 hover:bg-blue-600 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                        Get Started Now
+                        Get Your Free Quote Today
                     </a>
-                    <a href="mailto:support@policypals.co.uk" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                    <a href="mailto:support@policypals.co.uk" class="text-blue-400 hover:text-blue-300 transition-colors duration-300 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
                         Contact Support
                     </a>
                 </div>
@@ -120,25 +256,31 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">PolicyPals</h3>
-                    <p class="text-gray-400">Your friendly insurance advisors, making policy selection simple and transparent.</p>
+                    <p class="text-gray-400">Your trusted partner in finding the perfect insurance coverage. Making insurance simple, transparent, and accessible for everyone.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="#features" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Features</a></li>
-                        <li><a href="#benefits" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">About Us</a></li>
                         <li><a href="#faq" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">FAQ</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <p class="text-gray-400">Email: support@policypals.co.uk</p>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">Email: support@policypals.co.uk</li>
+                        <li class="text-gray-400">Phone: 0800 123 4567</li>
+                        <li class="text-gray-400">Hours: Mon-Fri 9am-6pm</li>
+                    </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://BAH-WEB.github.io/policy-pals-find-you-the-friendliest-insurance-policies-2025-02-04-ixjku/privacy.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://BAH-WEB.github.io/policy-pals-find-you-the-friendliest-insurance-policies-2025-02-04-ixjku/terms.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://BAH-WEB.github.io/policy-pals-find-you-the-friendliest-insurance-policies-2025-02-04-ixjku/blog.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -147,5 +289,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
